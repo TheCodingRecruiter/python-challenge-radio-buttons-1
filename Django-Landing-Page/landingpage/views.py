@@ -20,4 +20,6 @@ def index(request):
         newcustomer = form.save()
     
     return render(request, 'landingpage/index.html', context)
+
+
     
