@@ -1,0 +1,36 @@
+{% extends 'landingpage/layout.html' %}
+
+{% block content %}
+<div class="h1 col s3 left-align grey lighten-4 center-align" style="font-family: 'Exo', sans-serif;">Python Challenge - Radio Button</div>
+<div class="div">
+        <br>
+        <br>
+        <br>
+        <br>
+</div>
+
+<div class="row" style="font-family: 'Exo', sans-serif;">
+
+
+        <form method='POST' class="col s6"> {% csrf_token %}
+
+        <h4>Python Challenge Description</h4>
+        <p> The months listed below are radio buttons.  Why aren't they displaying/how can you fix them and still make the input save and post to the model? </p>
+
+{{ form }}
+
+
+
+
+<div class="div right-align">
+<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+</div>
+
+</div>
+              </form>
+
+
+
+      </div>
+
+{% endblock %}
